@@ -1,0 +1,31 @@
+<div class="logo" id="header-cadastro">
+    <img src="views/logo2.png" alt="" class="img-responsive center" width="15%">
+    <h4>Conectando você ao dia-a-dia do seu bebê</h4>
+</div>
+
+<div>
+    <h1>Lista de Responsáveis</h1>
+    <a ng-href="#/cadastro.pai">
+        <button class="btn btn-success" type="submit">
+            Cadastrar Novo Pai
+        </button>
+    </a>
+    <table class="table table-hover table-bordered">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>CPF</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="pai in listaPais">
+            <td>{{ pai.p_nome }}</td>
+            <td>{{ pai.p_telefone }}</td>
+            <td>{{ pai.p_cpf }}</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+</div>
